@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.elbonsoft.copd.LogInActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_title"/>
+
+    <EditText
+        android:id="@+id/loginIdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_form_top"
+        android:hint="아이디"
+        android:textSize="16sp"
+        android:textColorHint="#AAAAAA"
+        android:paddingLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/loginPwEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/common_form_bottom"
+        android:hint="비밀번호"
+        android:textSize="16sp"
+        android:textColorHint="#AAAAAA"
+        android:paddingLeft="15dp"/>
+
+    <CheckBox
+        android:id="@+id/loginAutoCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="자동로그인"
+        android:textColor="#666666"
+        android:onClick="onAutoCheckBox"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginbtn_selector"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onLoginButton"/>
+
+</LinearLayout>
